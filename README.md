@@ -4,7 +4,8 @@
 
 ## What
 
-This plugin adds extra features on top of `@nomiclabs/hardhat-ethers`. It supports mainnet, bsc, and most common testnets.
+This plugin adds extra features on top of `@nomiclabs/hardhat-ethers` and allows creating contract instances without
+manually downloading ABI: `ethers.getVerifiedContractAt('<address>')`. It supports Mainnet, BSC, and most testnets.
 
 ## Installation
 
@@ -46,7 +47,7 @@ export async function getVerifiedContractAt(
 
 ## Usage
 
-You need to add the following Etherscan config to your `hardhat.config.js` file:
+You need to add the following Etherscan config to your `hardhat.config.js` file. Etherscan API key is optional but without it Etherscan allows only 1 request per 5 seconds.
 
 ```js
 module.exports = {

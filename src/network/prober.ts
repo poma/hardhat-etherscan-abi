@@ -1,7 +1,4 @@
-import {
-  HARDHAT_NETWORK_NAME,
-  NomicLabsHardhatPluginError,
-} from "hardhat/plugins";
+import { NomicLabsHardhatPluginError } from "hardhat/plugins";
 import { EthereumProvider } from "hardhat/types";
 
 const pluginName = "hardhat-etherscan-abi";
@@ -62,12 +59,13 @@ export async function getEtherscanEndpoints(
   provider: EthereumProvider,
   networkName: string
 ): Promise<EtherscanURLs> {
-  if (networkName === HARDHAT_NETWORK_NAME) {
-    throw new NomicLabsHardhatPluginError(
-      pluginName,
-      `The selected network is ${networkName}. Please select a network supported by Etherscan.`
-    );
-  }
+  // Disable this check because ABI download can be useful in fork mode
+  // if (networkName === HARDHAT_NETWORK_NAME) {
+  //   throw new NomicLabsHardhatPluginError(
+  //     pluginName,
+  //     `The selected network is ${networkName}. Please select a network supported by Etherscan.`
+  //   );
+  // }
 
   const chainID = parseInt(await provider.send("eth_chainId"), 16) as NetworkID;
 
@@ -80,7 +78,9 @@ export async function getEtherscanEndpoints(
 
 Possible causes are:
   - The selected network (${networkName}) is wrong.
-  - Faulty hardhat network config.`
+  - Faulty hardhat network config.
+
+ If you use Mainnet fork mode try setting 'chainId: 1' in hardhat config`
     );
   }
 
