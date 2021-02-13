@@ -1,13 +1,13 @@
 {
   "name": "hardhat-etherscan-abi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hardhat plugin fetching contract ABI from etherscan",
   "repository": "github:poma/hardhat-etherscan-abi",
   "homepage": "https://github.com/poma/hardhat-etherscan-abi",
   "author": "Roman Semenov <semenov.roma@gmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "keywords": [
     "ethereum",
     "smart-contracts",
