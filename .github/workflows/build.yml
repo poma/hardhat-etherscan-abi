@@ -73,7 +73,7 @@ jobs:
       - name: Telegram Notification
         uses: appleboy/telegram-action@0.0.7
         with:
-          message: 🚀 Published a [${{ steps.vars.outputs.repo_name }}](https://github.com/${{ github.repository }}) version [${{ steps.vars.outputs.version }}](https://hub.docker.com/repository/docker/${{ github.repository }}) to docker hub
+          message: 🚀 Published a [${{ steps.vars.outputs.repo_name }}](https://github.com/${{ github.repository }}) version [${{ steps.vars.outputs.version }}](https://www.npmjs.com/package/${{ steps.vars.outputs.repo_name }}) to NPM
           format: markdown
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
