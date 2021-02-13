@@ -1,5 +1,4 @@
-# hardhat-etherscan-abi [![Build Status](https://github.com/poma/hardhat-etherscan-abi/workflows/build/badge.svg)](https://github.com/poma/hardhat-etherscan-abi/actions) [![npm](https://img.shields.io/npm/v/hardhat-etherscan-abi.svg)](https://www.npmjs.com/package/hardhat-etherscan-abi)
-[![hardhat](https://hardhat.org/buidler-plugin-badge.svg?1)](https://hardhat.org)
+# hardhat-etherscan-abi [![Build Status](https://github.com/poma/hardhat-etherscan-abi/workflows/build/badge.svg)](https://github.com/poma/hardhat-etherscan-abi/actions) [![npm](https://img.shields.io/npm/v/hardhat-etherscan-abi.svg)](https://www.npmjs.com/package/hardhat-etherscan-abi) [![hardhat](https://hardhat.org/buidler-plugin-badge.svg?1)](https://hardhat.org)
 
 [Hardhat](https://hardhat.org) plugin that fetches verified contract ABI from [Etherscan](https://etherscan.io).
 
