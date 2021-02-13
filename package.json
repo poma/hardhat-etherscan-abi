@@ -1,6 +1,6 @@
 {
   "name": "hardhat-etherscan-abi",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Hardhat plugin fetching contract ABI from etherscan",
   "repository": "github:poma/hardhat-etherscan-abi",
   "homepage": "https://github.com/poma/hardhat-etherscan-abi",
