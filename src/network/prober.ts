@@ -22,6 +22,10 @@ enum NetworkID {
   // Binance Smart Chain
   BSC = 56,
   BSC_TESTNET = 97,
+  // Polygon
+  POLYGON = 137,
+  // Arbitrum
+  ARBITRUM = 42161,
 }
 
 const networkIDtoEndpoints: NetworkMap = {
@@ -52,6 +56,14 @@ const networkIDtoEndpoints: NetworkMap = {
   [NetworkID.BSC_TESTNET]: {
     apiURL: "https://api-testnet.bscscan.com/api",
     browserURL: "https://testnet.bscscan.com",
+  },
+  [NetworkID.POLYGON]: {
+    apiURL: "https://api.polygonscan.com/api",
+    browserURL: "https://polygonscan.com"
+  },
+  [NetworkID.ARBITRUM]: {
+    apiURL: "https://api.arbiscan.io/api",
+    browserURL: "https://arbiscan.io",
   },
 };
 
