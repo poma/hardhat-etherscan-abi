@@ -22,7 +22,8 @@ describe("Integration tests", function () {
       expect(abi[0]).to.be.equal(testABI);
     });
 
-    it("should display rate limit error", async function () {
+    // conditions for rate limits change, so the test is not reliable
+    it.skip("should display rate limit error", async function () {
       // @ts-ignore
       await expect(this.env.ethers.getVerifiedContractAt(testAddress)).to.be.rejectedWith(
         "Max rate limit reached, please provide an Etherscan API token via hardhat config.\nE.g.: { [...], etherscan: { apiKey: 'an API key' }, [...] }\nSee https://etherscan.io/apis"
