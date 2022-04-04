@@ -26,6 +26,8 @@ enum NetworkID {
   POLYGON = 137,
   // Arbitrum
   ARBITRUM = 42161,
+  // Fantom Opera
+  FANTOM = 250,
 }
 
 const networkIDtoEndpoints: NetworkMap = {
@@ -64,6 +66,10 @@ const networkIDtoEndpoints: NetworkMap = {
   [NetworkID.ARBITRUM]: {
     apiURL: "https://api.arbiscan.io/api",
     browserURL: "https://arbiscan.io",
+  },
+  [NetworkID.FANTOM]: {
+    apiURL: "https://api.ftmscan.com/api",
+    browserURL: "https://ftmscan.com/",
   },
 };
 
