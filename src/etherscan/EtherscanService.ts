@@ -29,8 +29,8 @@ export async function getAbi(
       pluginName,
       `Failure fetching ABI from Etherscan.
 Endpoint URL: ${urlWithQuery}
-Reason: ${error.message}`,
-      error
+Reason: ${(error as Error).message}`,
+        (error as Error)
     );
   }
 
@@ -59,8 +59,8 @@ Reason: ${etherscanResponse.result}`
     throw new NomicLabsHardhatPluginError(
       pluginName,
       `Failure parsing ABI JSON from Etherscan.
-Reason: ${error.message}`,
-      error
+Reason: ${(error as Error).message}`,
+        (error as Error)
     );
   }
 }
