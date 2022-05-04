@@ -28,6 +28,9 @@ enum NetworkID {
   ARBITRUM = 42161,
   // Fantom Opera
   FANTOM = 250,
+  // Snowtrace
+  AVALANCHE = 43114,
+  FUJI = 43114
 }
 
 const networkIDtoEndpoints: NetworkMap = {
@@ -71,6 +74,14 @@ const networkIDtoEndpoints: NetworkMap = {
     apiURL: "https://api.ftmscan.com/api",
     browserURL: "https://ftmscan.com/",
   },
+  [NetworkID.AVALANCHE]: {
+    apiURL: "https://api.snowtrace.io/api",
+    browserURL: "https://snowtrace.io/",
+  },
+  [NetworkID.FUJI]: {
+    apiURL: "https://api-testnet.snowtrace.io/api",
+    browserURL: "https://testnet.snowtrace.io/",
+  }
 };
 
 export async function getEtherscanEndpoints(
