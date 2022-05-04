@@ -30,7 +30,7 @@ enum NetworkID {
   FANTOM = 250,
   // Snowtrace
   AVALANCHE = 43114,
-  FUJI = 43114
+  FUJI = 43113
 }
 
 const networkIDtoEndpoints: NetworkMap = {
