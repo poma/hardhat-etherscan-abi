@@ -20,7 +20,8 @@
     "lint": "eslint .",
     "test": "mocha test/**/*.test.ts --exit",
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "prepare": "tsc"
   },
   "files": [
     "dist/src/",
