@@ -24,6 +24,7 @@ enum NetworkID {
   BSC_TESTNET = 97,
   // Polygon
   POLYGON = 137,
+  MUMBAI = 80001,
   // Arbitrum
   ARBITRUM = 42161,
   // Fantom Opera
@@ -65,6 +66,10 @@ const networkIDtoEndpoints: NetworkMap = {
   [NetworkID.POLYGON]: {
     apiURL: "https://api.polygonscan.com/api",
     browserURL: "https://polygonscan.com"
+  },
+  [NetworkID.MUMBAI]: {
+    apiURL: "https://api-testnet.polygonscan.com/api",
+    browserURL: "https://mumbai.polygonscan.com"
   },
   [NetworkID.ARBITRUM]: {
     apiURL: "https://api.arbiscan.io/api",
