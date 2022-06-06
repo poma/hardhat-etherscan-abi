@@ -31,7 +31,9 @@ enum NetworkID {
   FANTOM = 250,
   // Snowtrace
   AVALANCHE = 43114,
-  FUJI = 43113
+  FUJI = 43113,
+  // Optimism
+  OPTIMISM = 10
 }
 
 const networkIDtoEndpoints: NetworkMap = {
@@ -86,6 +88,10 @@ const networkIDtoEndpoints: NetworkMap = {
   [NetworkID.FUJI]: {
     apiURL: "https://api-testnet.snowtrace.io/api",
     browserURL: "https://testnet.snowtrace.io/",
+  },
+  [NetworkID.OPTIMISM]: {
+    apiURL: "https://optimistic.etherscan.io/api",
+    browserURL: "https://optimistic.etherscan.io",
   }
 };
 
