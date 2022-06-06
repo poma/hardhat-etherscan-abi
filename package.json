@@ -21,7 +21,7 @@
     "test": "mocha test/**/*.test.ts --exit",
     "build": "tsc",
     "watch": "tsc -w",
-    "postinstall": "tsc --outDir ./build"
+    "prepack": "yarn install && yarn run buildd"
   },
   "files": [
     "dist/src/",
